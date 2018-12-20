@@ -1,0 +1,92 @@
+.stocks .symbol {
+  padding-left: 0;
+  padding-right: 25px;
+}
+
+.stocks .direction-icon {
+  padding-left: 0px;
+  padding-right: 0px;
+  text-align: right;
+}
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 250px;
+  height: 64px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {display:none;}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+     height: 80px;
+  width: 200px;
+  bottom: 0;
+  background-color: #ccc;
+    border-radius: 8px;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 40px;
+  width: 40px;
+  left: 10px;
+  bottom: 18px;
+  background-color: white;
+ border-radius: 5px;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(101px);
+  -ms-transform: translateX(101px);
+  transform: translateX(137px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+button,
+[role="button"] {
+    ;
+}
+
+button[aria-pressed="true"],
+[role="button"][aria-pressed="true"] {
+    ;
+}
+.hfiobox {
+    width:300px;
+    height:400px; /* was 600 */
+    /*background-color:#fff; */
+    position:relative;
+    margin-left:0px; /* half of width */
+    margin-right: 100p
+    margin-top:auto;  /* half of height */
+    top:150%;
+    
+}
